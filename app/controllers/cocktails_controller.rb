@@ -8,11 +8,11 @@ class CocktailsController < ApplicationController
   end
 
   def create
-     @cocktail = Cocktail.new(cocktail_params)
+    @cocktail = Cocktail.new(cocktail_params)
     # we need `restaurant_id` to asssociate review with corresponding restaurant
 
     if @cocktail.save
-    redirect_to cocktails_path
+    redirect_to cocktail_path(@cocktail)
     else
     render :new
     end

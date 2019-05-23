@@ -15,3 +15,8 @@ Cocktail.create!(name: "Molotov")
 Cocktail.create!(name: "Sangria")
 Cocktail.create!(name: "Mojito")
 
+Dose.create!(name: "6 cl ")
+Dose.create!(name: "3 cl ")
+Dose.create!(name: "10 cl")
+
+
